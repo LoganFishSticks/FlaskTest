@@ -1,0 +1,111 @@
+{% extends 'base.html' %} {% block title %}home{% endblock %} {% block content
+%}
+
+<style>
+  /* CSS for the grid */
+  .container {
+    color: white;
+  }
+
+  /* CSS for columns in the grid */
+  .col-4 {
+    border: 1px solid;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for the title above the grid */
+  h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  /* CSS for the title column in the grid */
+  #title {
+    background-color: #00c805;
+    color: black;
+    border: none;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  /* CSS for the body of the webpage */
+  body {
+    background-color: black;
+  }
+</style>
+<h1>Stock Market</h1>
+
+<!-- Grid system used from bootstrap https://getbootstrap.com/docs/5.3/layout/grid/ -->
+<div class="container">
+  <div class="row">
+    <div class="col-4" id="title">Stock</div>
+    <div class="col-4" id="title">Market Price</div>
+    <div class="col-4" id="title">Market Cap</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">NVDA</div>
+    <div class="col-4">$108.10</div>
+    <div class="col-4">$2.65T</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">AAPL</div>
+    <div class="col-4">$220.11</div>
+    <div class="col-4">$3.358T</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">MSFT</div>
+    <div class="col-4">$423.04</div>
+    <div class="col-4">$3.144T</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">GOOG</div>
+    <div class="col-4">$152.15</div>
+    <div class="col-4">$1.864T</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">META</div>
+    <div class="col-4">$511.83</div>
+    <div class="col-4">$1.294T</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">TSLA</div>
+    <div class="col-4">$228.13</div>
+    <div class="col-4">$728.79B</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">WMT</div>
+    <div class="col-4">$78.84</div>
+    <div class="col-4">$633.73B</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">JPM</div>
+    <div class="col-4">$207.23</div>
+    <div class="col-4">$589.60B</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">COST</div>
+    <div class="col-4">$900.40</div>
+    <div class="col-4">$399.17B</div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">NFLX</div>
+    <div class="col-4">$681.47</div>
+    <div class="col-4">$292.46B</div>
+  </div>
+
+</div>
+
+{% endblock %}
